@@ -53,18 +53,13 @@ public class UartActivity extends UartInterfaceActivity {
     private volatile int mSentBytes;
     private volatile int mReceivedBytes;
     private DataFragment mRetainedDataFragment;
-    private Context context;
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_uart);
         IntentFilter filter = new IntentFilter();
         filter.addAction("com.frei.mark.marxnotifier.LISTENER");
-
-        context = getApplicationContext();
-        Intent nlsintent = new Intent(context, NotificationService.class);
-        startService(nlsintent);
 
 
         mBleManager = BleManager.getInstance(this);
@@ -97,9 +92,6 @@ public class UartActivity extends UartInterfaceActivity {
     @Override
     public void onDestroy() {
         saveRetainedDataFragment();
-
-        Intent nlsintent = new Intent(context, NotificationService.class);
-        stopService(nlsintent);
 
         super.onDestroy();
     }
