@@ -1,0 +1,158 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">MarxNotifier</string>
+    <string name="app_full_name">MarxNotifier</string>
+    <string name="action_info">Info</string>
+    <string name="action_refreshcache">Refresh Bluetooth Cache</string>
+    <string name="action_about">About</string>
+
+    <!-- Bluetooth Adapter -->
+    <string name="dialog_error_no_ble">Bluetooth Low Energy not supported</string>
+    <string name="dialog_error_no_bluetooth">Bluetooth not available</string>
+
+    <!-- Location -->
+    <string name="dialog_error_nolocationservices_requiredforscan_marshmallow">Android 6 requires that Location Services are enabled to scan bluetooth peripherals.\nPlease, go to settings and enable it to start scanning peripherals</string>
+
+	<!-- Beacon -->
+    <string name="title_activity_beacon">Beacons</string>
+    <string name="beacon_help_title">Beacons Help</string>
+
+    <string name="beacon_manufacturer_choose_title">Choose Manufacturer</string>
+    <string-array name="beacon_manufacturers_names">
+        <item>Apple  (004C)</item>
+        <item>Nordic (0059)</item>
+    </string-array>
+
+    <string-array name="beacon_manufacturers_ids">
+        <item>004C</item>
+        <item>0059</item>
+    </string-array>
+
+    <string-array name="beacon_page_titles">
+        <item>Beacon</item>
+        <item>Eddystone</item>
+    </string-array>
+
+    <string name="beacon_ibeacon_vendor">Vendor:</string>
+    <string name="beacon_ibeacon_choose">Choose</string>
+    <string name="beacon_ibeacon_random">Random</string>
+    <string name="beacon_ibeacon_refreshrssi">Refresh</string>
+    <string name="beacon_ibeacon_major">Major:</string>
+    <string name="beacon_ibeacon_minor">Minor:</string>
+    <string name="beacon_ibeacon_rssi">Rssi@1m:</string>
+    <string name="beacon_uribeacon_uri">Uri:</string>
+    <string name="beacon_beacon_enable">Enable</string>
+    <string name="beacon_beacon_disable">Disable</string>
+
+    <string name="beacon_beacon_enabled">Beacon Enabled</string>
+    <string name="beacon_beacon_disabled">Beacon Disabled</string>
+    <string name="beacon_beacon_enabling">Resetting into Beacon Mode</string>
+
+    <string name="beacon_aterror">Device not responding to commands.\nPlease ensure that you are running firmware version 0.4.7 or higher</string>
+    <string name="beacon_ibeacon_subtitle">Beacon Data</string>
+    <string name="beacon_uribeacon_subtitle">Eddystone Data</string>
+
+    <string name="beacon_uribeacon_invalidprefix">Prefix must be one of the following values: http://www. https://www.  http:// https://  urn:uuid:</string>
+    <string name="beacon_uribeacon_uritoolong">Uri too long</string>
+    <string name="beacon_uribeacon_shorteneduriformat">Shortened uri: %s</string>
+    <string name="beacon_uribeacon_shorteningerror">Shortening error</string>
+    <string name="beacon_uribeacon_shortening">Shortening…</string>
+    <string name="beacon_uribeacon_validuri">Valid URI</string>
+	
+    <!-- Scan Activity -->
+    <string name="scan_scanbutton_scan">Scan for peripherals</string>
+    <string name="scan_scanbutton_scanning">Scanning…</string>
+    <string name="scan_devicesheadertitle">PERIPHERALS</string>
+    <string name="scan_nodevicesfound">No peripherals found</string>
+    <string name="scan_device_localname">Local Name</string>
+    <string name="scan_device_address">Address</string>
+    <string name="scan_device_rssi_notavailable">N/A</string>
+    <string name="scan_device_connect">Connect</string>
+    <string name="scan_device_uuid">UUID</string>
+    <string name="scan_device_services">Service UUIDs</string>
+    <string name="scan_device_txpower">TX Power Level</string>
+    <string name="scan_device_viewadvraw">View raw data</string>
+    <string name="scan_device_advertising_title">Advertising Raw Data</string>
+    <string name="scan_device_beacon_manufacturer">Manufacturer</string>
+    <string name="scan_device_beacon_major">Major</string>
+    <string name="scan_device_beacon_minor">Minor</string>
+    <string name="scan_device_uribeacon_uri">Uri</string>
+    <string name="scan_connecting">Connecting…</string>
+    <string name="scan_gettingupdateinfo">Waiting for device info…</string>
+    <string name="scan_connectto_dialog_title_format">Choose mode to connect to %s</string>
+    <string name="scan_unexpecteddisconnect">Peripheral disconnected</string>
+    <string name="scan_tag_id">Id</string>
+    <string name="scan_connectservice_info">Info</string>
+    <string name="scan_connectservice_uart">UART</string>
+    <string name="scan_connectservice_pinio">Pin I/O</string>
+    <string name="scan_connectservice_controller">Controller</string>
+    <string name="scan_connectservice_beacon">Beacon</string>
+    <string name="scan_connectservice_neopixel">Neopixel</string>
+    <string name="scan_failedupdatedetected_title">Failed update detected</string>
+    <string name="scan_failedupdatedetected_message">A failed update for this device has been detected.\nIt is strongly recommended to retry updating the device now</string>
+    <string name="scan_failedupdatedetected_ok">Update now</string>
+    <string name="scan_secondphaseupdatedetected_title">Continue update</string>
+    <string name="scan_secondphaseupdatedetected_message">Firmware will be updated now</string>
+    <string name="scan_secondphaseupdatedetected_ok">Continue</string>
+    <string name="scan_filters_title_filter_format">Filter: %s</string>
+    <string name="scan_filters_title_nofilter">No filter selected</string>
+    <string name="scan_filters_name_rssi_format">Rssi >= %d</string>
+    <string name="scan_filters_name_named">with name</string>
+    <string name="scan_filters_name_uart">with UART</string>
+    <string name="scan_filters_name_title">Name:</string>
+    <string name="scan_filters_name_tip">Find by name</string>
+    <string name="scan_filters_name_settings_contains">Name contains</string>
+    <string name="scan_filters_name_settings_exact">Name equals</string>
+    <string name="scan_filters_name_settings_casesensitive">Matching case</string>
+    <string name="scan_filters_name_settings_caseinsensitive">Ignoring case</string>
+    <string name="scan_filters_rssi_title">RSSI >=</string>
+    <string name="scan_filters_rssi_value_format">%d dBM</string>
+    <string name="scan_filters_unnamed">Show unnamed devices</string>
+    <string name="scan_filters_onlyuart">Must have UART service</string>
+    <string-array name="scan_devicetypes">
+        <item>Uknown</item>
+        <item>UART capable</item>
+        <item>Beacon</item>
+        <item>Eddystone</item>
+    </string-array>
+
+    <!-- Scan Help Activity -->
+    <string name="title_activity_mainhelp">Help</string>
+
+
+    <!-- Uart Activity -->
+    <string name="title_activity_uart">UART</string>
+    <string name="uart_echo">Echo:</string>
+    <string name="uart_eol">EOL:</string>
+    <string name="uart_format_ascii">Ascii</string>
+    <string name="uart_format_hex">Hex</string>
+    <string name="uart_format_hexadecimal">Hexadecimal</string>
+    <string name="uart_displaymode_text">Text</string>
+    <string name="uart_displaymode_timestamp">Timestamp</string>
+    <string name="uart_help_title">UART Help</string>
+    <string name="uart_action_displaymode_format">Display Mode: %s</string>
+    <string name="uart_action_datamode_format">Data Mode: %s</string>
+    <string name="uart_action_echo">Show Echo</string>
+    <string name="uart_action_eol">Add Eol</string>
+    <string name="uart_action_enabled">On</string>
+    <string name="uart_action_disabled">Off</string>
+    <string name="uart_copy">Copy</string>
+    <string name="uart_share">Share</string>
+    <string name="uart_clear">Clear</string>
+    <string name="uart_send">SEND</string>
+    <string name="uart_share_subject">UART</string>
+    <string name="uart_share_empty">Nothing to share. UART text is empty</string>
+    <string name="uart_sharechooser_title">Send UART text to…</string>
+    <string name="uart_sentbytes_format">Sent: %d bytes </string>
+    <string name="uart_receivedbytes_format">Received: %d bytes</string>
+    <string name="uart_text_dataomitted">(Previous data omitted to improve performance…)</string>
+
+    <!-- Common -->
+    <string name="dialog_notice">Notice</string>
+    <string name="dialog_dontshowagain">Don\'t show again</string>
+
+    <!-- Info Activity -->
+    <string name="title_activity_info">Info</string>
+    <string name="info_item_service">Service</string>
+    <string name="info_help_title">Info List Help</string>
+</resources>
